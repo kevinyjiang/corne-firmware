@@ -49,10 +49,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB            &kp Q         &kp W  &kp F         &kp P              &kp B            &kp J    &kp L               &kp U      &kp Y    &kp SEMICOLON  &caps_word
-&kp LCTRL          &HML LCTRL A  &kp R  &kp S         &HML LEFT_SHIFT T  &kp G            &kp M    &HMR RIGHT_SHIFT N  &kp E      &kp I    &HMR RCTRL O   &kp SQT
-&kp LS(LA(LCTRL))  &kp Z         &kp X  &kp C         &kp D              &kp V            &kp K    &kp H               &kp COMMA  &kp DOT  &kp FSLH       &kp LS(LA(LG(LCTRL)))
-                                        &mt LGUI ESC  &mo 1              &kp BACKSPACE    &kp RET  &mo 2               &kp SPACE
+&kp TAB            &kp Q         &kp W  &kp F            &kp P              &kp B            &kp J    &kp L               &kp U                 &kp Y    &kp SEMICOLON  &caps_word
+&kp LCTRL          &HML LCTRL A  &kp R  &kp S            &HML LEFT_SHIFT T  &kp G            &kp M    &HMR RIGHT_SHIFT N  &kp E                 &kp I    &HMR RCTRL O   &kp SQT
+&kp LS(LA(LCTRL))  &kp Z         &kp X  &HML LEFT_ALT C  &kp D              &kp V            &kp K    &kp H               &HMR RIGHT_ALT COMMA  &kp DOT  &kp FSLH       &kp LS(LA(LG(LCTRL)))
+                                        &mt LGUI ESC     &mo 1              &kp BACKSPACE    &kp RET  &mo 2               &kp SPACE
             >;
         };
 
@@ -65,10 +65,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&bt BT_CLR    &kp N1             &kp N2        &kp N3      &kp N4        &kp N5           &kp N6              &kp N7            &kp N8            &kp N9               &kp N0         &trans
+&bt BT_SEL 1  &kp LC(LA(LS(Q)))  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp LS(LG(S))    &kp LEFT            &kp DOWN          &kp UP            &kp RIGHT            &kp LG(MINUS)  &kp LG(EQUAL)
+&bt BT_SEL 0  &kp C_BRI_DN       &kp C_PREV    &kp C_PP    &kp C_NEXT    &kp C_BRI_UP     &kp LG(LEFT_ARROW)  &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &kp LG(RIGHT_ARROW)  &trans         &trans
+                                               &trans      &trans        &trans           &trans              &trans            &trans
             >;
         };
 
@@ -81,10 +81,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp GRAVE  &kp TILDE  &kp PIPE  &kp SQT               &kp DOUBLE_QUOTES  &kp PERCENT       &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &kp DOLLAR        &kp BSPC
+&kp LCTRL  &kp MINUS  &kp PLUS  &kp EQUAL             &kp EXCLAMATION    &kp AMPERSAND     &kp COLON    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE
+&trans     &trans     &trans    &kp NON_US_BACKSLASH  &kp QUESTION       &kp UNDERSCORE    &kp AT_SIGN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &trans            &trans
+                                &trans                &trans             &trans            &trans       &trans                &trans
             >;
         };
 
