@@ -76,7 +76,7 @@
             display-name = "sym";
             bindings = <
 &trans  &kp GRAVE  &kp TILDE  &kp SQT    &kp DQT       &kp PRCNT    &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR  &kp STAR  &trans
-&trans  &kp MINUS  &kp PLUS   &kp EQUAL  &kp EXCL      &kp AMPS     &kp COLON  &kp LBRC  &kp RBRC  &kp LT    &kp GT    &to 0
+&trans  &kp MINUS  &kp PLUS   &kp EQUAL  &kp EXCL      &kp AMPS     &trans     &kp LBRC  &kp RBRC  &trans    &trans    &trans
 &trans  &trans     &kp BSLH   &kp PIPE   &kp QUESTION  &kp UNDER    &kp AT     &kp LBKT  &kp RBKT  &kp HASH  &trans    &trans
                               &trans     &trans        &trans       &trans     &trans    &trans
             >;
