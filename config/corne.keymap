@@ -57,7 +57,7 @@
             bindings = <
 &kp TAB                    &kp Q         &kp W  &kp F            &kp P              &kp B       &kp J      &kp L               &kp U                 &kp Y    &kp SEMI      &to 0
 &kp ESC                    &HML LCTRL A  &kp R  &kp S            &HML LEFT_SHIFT T  &kp G       &kp M      &HMR RIGHT_SHIFT N  &kp E                 &kp I    &HMR RCTRL O  &kp RET
-&kp LS(LA(LC(LG(SPACE))))  &kp Z         &kp X  &HML LEFT_ALT C  &kp D              &kp V       &kp K      &kp H               &HMR RIGHT_ALT COMMA  &kp DOT  &kp FSLH      &kp LA(LS(LC(LG(M))))
+&kp LS(LA(LC(LG(SPACE))))  &kp Z         &kp X  &HML LEFT_ALT C  &HML D LEFT_GUI    &kp V       &kp K      &kp H               &HMR RIGHT_ALT COMMA  &kp DOT  &kp FSLH      &kp LA(LS(LC(LG(M))))
                                                 &kp LGUI         &mo 1              &kp BSPC    &kp SPACE  &mo 2               &caps_word
             >;
         };
@@ -75,10 +75,10 @@
         sym {
             display-name = "sym";
             bindings = <
-&trans  &kp GRAVE  &kp TILDE  &kp DQT   &kp SQT    &kp PRCNT    &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR  &kp PIPE  &trans
-&trans  &kp MINUS  &kp UNDER  &kp PLUS  &kp EXCL   &kp EQUAL    &kp COLON  &kp LBRC  &kp RBRC  &kp STAR  &kp SEMI  &trans
-&trans  &trans     &trans     &kp HASH  &kp QMARK  &kp AMPS     &kp AT     &kp LBKT  &kp RBKT  &kp BSLH  &kp FSLH  &trans
-                              &trans    &trans     &trans       &trans     &trans    &trans
+&trans  &kp GRAVE  &kp TILDE  &kp DQT   &kp SQT       &kp PRCNT    &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR  &kp PIPE  &trans
+&trans  &kp MINUS  &kp UNDER  &kp PLUS  &kp EXCL      &kp EQUAL    &kp COLON  &kp LBRC  &kp RBRC  &kp STAR  &kp SEMI  &trans
+&trans  &trans     &trans     &kp HASH  &kp LEFT_GUI  &kp AMPS     &kp AT     &kp LBKT  &kp RBKT  &kp BSLH  &kp FSLH  &trans
+                              &trans    &trans        &trans       &trans     &trans    &trans
             >;
         };
     };
