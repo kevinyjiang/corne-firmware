@@ -49,6 +49,15 @@
         };
     };
 
+    macros {
+        emoji: emoji {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp L &kp H &kp E &kp A &kp R &kp T>;
+            label = "EMOJI";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -75,10 +84,10 @@
         sym {
             display-name = "sym";
             bindings = <
-&trans  &kp GRAVE  &kp TILDE  &kp SQT    &kp DQT       &kp PRCNT    &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR  &trans    &trans
-&trans  &kp MINUS  &kp PLUS   &kp EQUAL  &kp EXCL      &kp AMPS     &kp COLON  &kp LBRC  &kp RBRC  &kp STAR  &kp SEMI  &trans
-&trans  &kp BSLH   &trans     &kp PIPE   &kp QUESTION  &kp UNDER    &kp AT     &kp LBKT  &kp RBKT  &kp HASH  &trans    &trans
-                              &trans     &trans        &trans       &trans     &trans    &trans
+&trans  &kp GRAVE  &kp TILDE  &kp DQT   &kp SQT    &kp PRCNT    &kp CARET  &kp STAR   &kp LPAR  &kp RPAR  &kp DLLR  &trans
+&trans  &kp MINUS  &kp UNDER  &kp PLUS  &kp EXCL   &kp AMPS     &kp PIPE   &kp COLON  &kp LBRC  &kp RBRC  &kp SEMI  &trans
+&trans  &trans     &trans     &kp HASH  &kp EQUAL  &emoji       &kp BSLH   &kp AT     &kp LBKT  &kp RBKT  &kp FSLH  &trans
+                              &trans    &trans     &trans       &trans     &trans     &trans
             >;
         };
     };
