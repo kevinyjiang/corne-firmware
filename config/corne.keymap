@@ -57,10 +57,10 @@
         base {
             display-name = "base";
             bindings = <
-&kp TAB            &kp Q         &kp W  &kp F            &kp P              &kp B       &kp J      &kp L               &kp U                  &kp Y    &kp SEMI      &to 0
-&kp ESC            &HML LCTRL A  &kp R  &kp S            &HML LEFT_SHIFT T  &kp G       &kp M      &HMR RIGHT_SHIFT N  &kp E                  &kp I    &HMR RCTRL O  &kp RET
-&kp LS(LA(LCTRL))  &kp Z         &kp X  &HML LEFT_ALT C  &kp D              &kp V       &kp K      &kp H               &HMR RIGHT_ALT COMMA   &kp DOT  &kp FSLH      &caps_word
-                                        &sl 1            &kp LGUI           &kp BSPC    &kp SPACE  &sl 2               &kp LS(LA(LC(LG(M))))
+&kp TAB            &kp Q         &kp W  &kp F            &kp P              &kp B       &kp J  &kp L               &kp U                  &kp Y    &kp SEMI      &to 0
+&kp ESC            &HML LCTRL A  &kp R  &kp S            &HML LEFT_SHIFT T  &kp G       &kp M  &HMR RIGHT_SHIFT N  &kp E                  &kp I    &HMR RCTRL O  &kp RET
+&kp LS(LA(LCTRL))  &kp Z         &kp X  &HML LEFT_ALT C  &kp D              &kp V       &kp K  &kp H               &HMR RIGHT_ALT COMMA   &kp DOT  &kp FSLH      &caps_word
+                                        &sl 1            &kp LGUI           &kp BSPC    &sl 2  &kp SPACE           &kp LS(LA(LC(LG(M))))
             >;
         };
 
@@ -77,8 +77,8 @@
         sym {
             display-name = "sym";
             bindings = <
-&trans  &kp GRAVE  &kp TILDE  &kp SQT    &kp DQT       &kp PRCNT    &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR  &kp STAR  &trans
-&trans  &kp MINUS  &kp PLUS   &kp EQUAL  &kp EXCL      &kp AMPS     &trans     &kp LBRC  &kp RBRC  &trans    &trans    &trans
+&trans  &kp GRAVE  &kp TILDE  &kp SQT    &kp DQT       &kp PRCNT    &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR  &trans    &trans
+&trans  &kp MINUS  &kp PLUS   &kp EQUAL  &kp EXCL      &kp AMPS     &kp COLON  &kp LBRC  &kp RBRC  &kp STAR  &kp SEMI  &trans
 &trans  &trans     &kp BSLH   &kp PIPE   &kp QUESTION  &kp UNDER    &kp AT     &kp LBKT  &kp RBKT  &kp HASH  &trans    &trans
                               &trans     &trans        &trans       &trans     &trans    &trans
             >;
