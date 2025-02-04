@@ -57,10 +57,10 @@
         base {
             display-name = "base";
             bindings = <
-&kp TAB                    &kp Q         &kp W  &kp F            &kp P              &kp B       &kp J  &kp L               &kp U                 &kp Y    &kp SEMI      &to 0
-&kp ESC                    &HML LCTRL A  &kp R  &kp S            &HML LEFT_SHIFT T  &kp G       &kp M  &HMR RIGHT_SHIFT N  &kp E                 &kp I    &HMR RCTRL O  &kp RET
-&kp LS(LA(LC(LG(SPACE))))  &kp Z         &kp X  &HML LEFT_ALT C  &kp D              &kp V       &kp K  &kp H               &HMR RIGHT_ALT COMMA  &kp DOT  &kp FSLH      &kp LA(LS(LC(LG(M))))
-                                                &kp LGUI         &sl 1              &kp BSPC    &sl 2  &kp SPACE           &caps_word
+&kp TAB                    &kp Q         &kp W  &kp F            &kp P              &kp B    &kp J  &kp L               &kp U                 &kp Y    &kp SEMI      &to 0
+&kp ESC                    &HML LCTRL A  &kp R  &kp S            &HML LEFT_SHIFT T  &kp G    &kp M  &HMR RIGHT_SHIFT N  &kp E                 &kp I    &HMR RCTRL O  &kp RET
+&kp LS(LA(LC(LG(SPACE))))  &kp Z         &kp X  &HML LEFT_ALT C  &kp D              &kp V    &kp K  &kp H               &HMR RIGHT_ALT COMMA  &kp DOT  &kp FSLH      &kp LA(LS(LC(LG(M))))
+                                                &kp LGUI         &kp BSPC           &mo 1    &mo 2  &kp SPACE           &caps_word
             >;
         };
 
