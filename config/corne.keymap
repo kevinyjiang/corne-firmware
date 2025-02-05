@@ -42,10 +42,9 @@
     combos {
         compatible = "zmk,combos";
 
-        click {
-            bindings = <&kp LS(LA(LC(LG(M))))>;
-            key-positions = <37 40>;
-            layers = <0>;
+        clr {
+            bindings = <&bt BT_CLR>;
+            key-positions = <24 35 40 37>;
         };
     };
 
