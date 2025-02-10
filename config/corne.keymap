@@ -55,30 +55,30 @@
         base {
             display-name = "base";
             bindings = <
-&kp TAB                &kp Q         &kp W            &kp F        &kp P              &kp B       &kp J      &kp L               &kp U        &kp Y             &kp SEMI      &kp LS(LA(LC(LG(Q))))
-&kp ESC                &HML LCTRL A  &HML LEFT_ALT R  &HML LGUI S  &HML LEFT_SHIFT T  &kp G       &kp M      &HMR RIGHT_SHIFT N  &HMR RGUI E  &HMR RIGHT_ALT I  &HMR RCTRL O  &kp RET
-&kp LS(LA(LC(LG(E))))  &kp Z         &kp X            &kp C        &kp D              &kp V       &kp K      &kp H               &kp COMMA    &kp DOT           &kp FSLH      &kp LA(LS(LC(LG(M))))
-                                                      &kp ESC      &mo 1              &kp BSPC    &kp SPACE  &mo 2               &caps_word
+&kp TAB                &kp Q        &kp W            &kp F         &kp P              &kp B       &kp J      &kp L               &kp U         &kp Y             &kp SEMI     &kp LS(LA(LC(LG(Q))))
+&kp ESC                &HML LGUI A  &HML LEFT_ALT R  &HML LCTRL S  &HML LEFT_SHIFT T  &kp G       &kp M      &HMR RIGHT_SHIFT N  &HMR RCTRL E  &HMR RIGHT_ALT I  &HMR RGUI O  &kp RET
+&kp LS(LA(LC(LG(E))))  &kp Z        &kp X            &kp C         &kp D              &kp V       &kp K      &kp H               &kp COMMA     &kp DOT           &kp FSLH     &kp LA(LS(LC(LG(M))))
+                                                     &kp ESC       &mo 1              &kp BSPC    &kp SPACE  &mo 2               &caps_word
             >;
         };
 
         ctrl {
             display-name = "ctrl";
             bindings = <
-&bt BT_SEL 1  &trans    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &HML LG(LS(N4)) LS(LG(S))    &kp DOWN  &kp RIGHT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_BRI_DN  &kp LG(C_BRI_UP)
-&bt BT_SEL 0  &kp N1    &kp N2        &HML LGUI N3  &kp N4        &kp N5                       &kp N6    &kp N7     &HMR RGUI N8    &kp N9           &kp N0        &trans
-&bt BT_CLR    &mkp MB2  &kp C_PREV    &kp C_PP      &kp LGUI      &mkp MB1                     &kp UP    &kp LEFT   &mmv MOVE_UP    &mmv MOVE_LEFT   &trans        &trans
-                                      &trans        &trans        &trans                       &trans    &trans     &trans
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &HML LG(LS(N4)) LS(LG(S))    &kp DOWN  &kp RIGHT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LG(MINUS)  &kp LG(EQUAL)
+&trans        &kp N1        &kp N2        &HML LGUI N3  &kp N4        &kp N5                       &kp N6    &kp N7     &HMR RGUI N8    &kp N9           &kp N0         &trans
+&trans        &mkp MB2      &kp C_PREV    &kp C_PP      &kp LGUI      &mkp MB1                     &kp UP    &kp LEFT   &mmv MOVE_UP    &mmv MOVE_LEFT   &kp LG(LEFT)   &kp LG(RIGHT)
+                                          &trans        &trans        &trans                       &trans    &trans     &trans
             >;
         };
 
         sym {
             display-name = "sym";
             bindings = <
-&trans  &kp GRAVE  &kp TILDE  &kp DQT         &kp SQT    &kp PRCNT    &kp CARET  &kp LPAR  &kp RPAR        &kp DLLR  &kp PIPE  &trans
-&trans  &kp MINUS  &kp UNDER  &HML LGUI PLUS  &kp EXCL   &kp EQUAL    &kp COLON  &kp LBRC  &HMR RGUI RBRC  &kp STAR  &kp SEMI  &trans
-&trans  &trans     &trans     &kp HASH        &kp QMARK  &kp AMPS     &kp AT     &kp LBKT  &kp RBKT        &kp BSLH  &kp FSLH  &trans
-                              &trans          &trans     &trans       &trans     &trans    &trans
+&trans  &kp GRAVE        &kp TILDE  &kp DQT   &kp SQT    &kp PRCNT    &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR  &kp PIPE        &trans
+&trans  &HML LGUI MINUS  &kp UNDER  &kp PLUS  &kp EXCL   &kp EQUAL    &kp COLON  &kp LBRC  &kp RBRC  &kp STAR  &HMR RGUI SEMI  &trans
+&trans  &trans           &kp BSLH   &kp HASH  &kp QMARK  &kp AMPS     &kp AT     &kp LBKT  &kp RBKT  &kp BSLH  &kp FSLH        &trans
+                                    &trans    &trans     &trans       &trans     &trans    &trans
             >;
         };
     };
