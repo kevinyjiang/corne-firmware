@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -42,10 +41,14 @@
     combos {
         compatible = "zmk,combos";
 
-        clr {
-            bindings = <&bt BT_CLR>;
-            key-positions = <24 35 40 37>;
-            layers = <0>;
+        hyperm {
+            bindings = <&kp LC(LA(LS(LG(M))))>;
+            key-positions = <18 19>;
+        };
+
+        hypere {
+            bindings = <&kp LS(LA(LC(LG(E))))>;
+            key-positions = <16 17>;
         };
     };
 
@@ -55,20 +58,20 @@
         base {
             display-name = "base";
             bindings = <
-&kp TAB                &kp Q         &kp W  &kp F     &kp P              &kp B       &kp J      &kp L               &kp U          &kp Y    &kp SEMI      &kp LS(LA(LC(LG(Q))))
-&kp ESC                &HML LCTRL A  &kp R  &kp S     &HML LEFT_SHIFT T  &kp G       &kp M      &HMR RIGHT_SHIFT N  &kp E          &kp I    &HMR RCTRL O  &kp RET
-&kp LS(LA(LC(LG(E))))  &kp Z         &kp X  &kp C     &kp D              &kp V       &kp K      &kp H               &kp COMMA      &kp DOT  &kp FSLH      &kp LA(LS(LC(LG(M))))
-                                            &kp LGUI  &mo 1              &kp BSPC    &kp SPACE  &mo 2               &kp RIGHT_ALT
+&kp TAB                &kp Q         &kp W  &kp F          &kp P  &kp B       &kp J      &kp L  &kp U          &kp Y    &kp SEMI      &kp LS(LA(LC(LG(Q))))
+&kp LGUI               &HML LCTRL A  &kp R  &HML LSHIFT S  &kp T  &kp G       &kp M      &kp N  &HMR RSHFT E   &kp I    &HMR RCTRL O  &kp RET
+&kp LS(LA(LC(LG(E))))  &kp Z         &kp X  &kp C          &kp D  &kp V       &kp K      &kp H  &kp COMMA      &kp DOT  &kp FSLH      &kp LA(LS(LC(LG(M))))
+                                            &kp ESC        &mo 1  &kp BSPC    &kp SPACE  &mo 2  &kp RIGHT_ALT
             >;
         };
 
         ctrl {
             display-name = "ctrl";
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP      &HML LG(LS(N4)) LS(LG(S))    &kp DOWN  &kp RIGHT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LG(MINUS)  &kp LG(EQUAL)
-&trans        &kp N1        &kp N2        &kp N3      &kp N4            &kp N5                       &kp N6    &kp N7     &kp N8          &kp N9           &kp N0         &trans
-&trans        &mkp MB2      &kp C_PREV    &kp C_PP    &HML LGUI C_NEXT  &mkp MB1                     &kp UP    &kp LEFT   &mmv MOVE_UP    &mmv MOVE_LEFT   &kp LG(LEFT)   &kp LG(RIGHT)
-                                          &trans      &trans            &trans                       &trans    &trans     &trans
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP      &HML LG(LS(N4)) LS(LG(S))    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DOWN  &kp RIGHT  &kp LG(MINUS)  &kp LG(EQUAL)
+&caps_word    &kp N1        &kp N2        &kp N3      &kp N4            &kp N5                       &kp N6          &kp N7           &kp N8    &kp N9     &kp N0         &kp LC(B)
+&trans        &mkp MB2      &kp C_PREV    &kp C_PP    &HML LGUI C_NEXT  &mkp MB1                     &mmv MOVE_UP    &mmv MOVE_LEFT   &kp UP    &kp LEFT   &kp LG(LEFT)   &kp LG(RIGHT)
+                                          &trans      &trans            &trans                       &trans          &trans           &trans
             >;
         };
 
@@ -76,7 +79,7 @@
             display-name = "sym";
             bindings = <
 &trans  &kp GRAVE  &kp TILDE  &kp DQT   &kp SQT    &kp PRCNT    &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR  &kp PIPE  &trans
-&trans  &kp MINUS  &kp UNDER  &kp PLUS  &kp EXCL   &kp EQUAL    &kp COLON  &kp LBRC  &kp RBRC  &kp STAR  &kp SEMI  &trans
+&trans  &kp MINUS  &kp UNDER  &kp PLUS  &kp EXCL   &kp EQUAL    &trans     &kp LBRC  &kp RBRC  &kp STAR  &kp SEMI  &kp COLON
 &trans  &trans     &kp BSLH   &kp HASH  &kp QMARK  &kp AMPS     &kp AT     &kp LBKT  &kp RBKT  &kp BSLH  &kp FSLH  &trans
                               &trans    &trans     &trans       &trans     &trans    &trans
             >;
