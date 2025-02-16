@@ -43,12 +43,12 @@
 
         hyperm {
             bindings = <&kp LC(LA(LS(LG(M))))>;
-            key-positions = <33 32 31>;
+            key-positions = <32 31>;
         };
 
         hypere {
             bindings = <&kp LS(LA(LC(LG(E))))>;
-            key-positions = <26 27 28>;
+            key-positions = <27 28>;
         };
     };
 
