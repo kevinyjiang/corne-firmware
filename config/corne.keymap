@@ -58,7 +58,7 @@
         base {
             display-name = "base";
             bindings = <
-&kp TAB                &kp Q         &kp W  &kp F          &kp P  &kp B       &kp J      &kp L  &kp U          &kp Y    &kp SEMI      &kp LS(LA(LC(LG(Q))))
+&kp TAB                &kp Q         &kp W  &kp F          &kp P  &kp B       &kp J      &kp L  &kp U          &kp Y    &kp SEMI      &kp LA(LC(LS(Q)))
 &kp LGUI               &HML LCTRL A  &kp R  &HML LSHIFT S  &kp T  &kp G       &kp M      &kp N  &HMR RSHFT E   &kp I    &HMR RCTRL O  &kp RET
 &kp LS(LA(LC(LG(E))))  &kp Z         &kp X  &kp C          &kp D  &kp V       &kp K      &kp H  &kp COMMA      &kp DOT  &kp FSLH      &kp LA(LS(LC(LG(M))))
                                             &kp ESC        &mo 1  &kp BSPC    &kp SPACE  &mo 2  &kp RIGHT_ALT
